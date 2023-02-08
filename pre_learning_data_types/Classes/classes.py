@@ -185,3 +185,41 @@ k.color = "Red"
 print({k.name}, {k.color})
 # Output: {'Gate'} {'Red'}
 
+
+print("\n-------- Class Data --------\n")
+
+class Bunny:
+    L = "North Europe"
+    def __init__(self, weapon):
+        self.weapon = weapon
+    def display(self):
+        print(f"This bunny is from {self.L} and has sharp {self.weapon}")
+
+
+r1 = Bunny("big pointy teeth.")
+print(r1.display())
+
+
+
+print("\n-------- Class Method --------\n")
+
+
+class Cat:
+    L = "North Europe"
+    def __init__(self, weapon):
+        self.weapon = weapon
+    def display(self):
+        print(f"This cat is from {self.L} and has a {self.weapon}")
+    @classmethod
+    def get_location(cls):
+        return cls.L
+
+
+r = Cat("long tail.")
+print(r.display())
+print(r.get_location())
+
+
+print("\n-------- Inheritance / super() / multiple inheritance / Abstract/ Static --------\n")
+
+print("Inheritance is saved in liveclass github file on day 4 and 5")
